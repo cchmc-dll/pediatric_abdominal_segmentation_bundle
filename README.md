@@ -1,0 +1,2 @@
+# pediatric_abdominal_segmentation_bundle
+MONAI bundle for pediatric abdominal segmentation models
