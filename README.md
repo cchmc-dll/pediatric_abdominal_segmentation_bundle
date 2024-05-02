@@ -1,7 +1,7 @@
 # pediatric_abdominal_segmentation_bundle
 MONAI bundle for abdominal segmentation models fine-tuned and validated for Children. 
 
-Organ segmented:
+Organs segmented:
   - liver
   - spleen
   - pancreas
