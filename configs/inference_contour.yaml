@@ -3,6 +3,7 @@ imports:
 - "$import glob"
 - "$import os"
 - "$import scripts.monai_utils"
+- "$import scripts.post_transforms"
 workflow_type: inference
 input_channels: 1
 output_classes: 4
@@ -10,7 +11,7 @@ output_channels: 4
 # arch_ckpt_path: "$@bundle_root + '/models/dynunet_FT.pt'"
 # arch_ckpt: "$torch.load(@arch_ckpt_path, map_location=torch.device('cuda'))"
 bundle_root: "."
-output_dir: "$@bundle_root + '/eval/dynunet_FT/mask'"
+output_dir: "$@bundle_root + '/eval/dynunet_FT/contour'"
 dataset_dir: "/processed/Public/CT_TotalSegmentator/TS_split/test/" 
 data_list_file_path: "$@bundle_root + '/configs/TS_test.json'"
 datalist: "$monai.data.load_decathlon_datalist(@data_list_file_path, data_list_key='validation')"
@@ -123,21 +124,41 @@ postprocessing:
   - _target_: Activationsd
     keys: pred
     softmax: true
-  - _target_: Invertd
-    keys: pred
-    transform: "@preprocessing"
-    orig_keys: image
-    meta_key_postfix: meta_dict
-    nearest_interp: false
-    to_tensor: true
   - _target_: AsDiscreted
     keys: pred
     argmax: true
-  - _target_: SaveImaged
+  - _target_: scripts.post_transforms.CalculateVolumeFromMaskd
     keys: pred
-    meta_keys: pred_meta_dict
+    label_names: "@labels" 
+  - _target_: scripts.post_transforms.SaveData
+    keys: 
+    - pred_volumes
+    namekey: image
+    output_dir: "@output_dir"
+    output_postfix: 'volumes'
+  - _target_: Invertd
+    keys: 
+    - pred
+    - "@image_key"
+    transform: "@preprocessing"
+    orig_keys: image
+    meta_key_postfix: meta_dict
+    nearest_interp: 
+    - true
+    - false
+    to_tensor: true
+  - _target_: scripts.post_transforms.LabelToContourd
+    keys: pred
+  - _target_: scripts.post_transforms.OverlayImageLabeld
+    image_key: "@image_key"
+    label_key: pred
+    overlay_key: 'overlay'
+  - _target_: SaveImaged
+    keys: overlay
+    output_ext: '.dcm'
     output_dir: "@output_dir"
     separate_folder: false
+    #squeeze_end_dims: false
     output_dtype: "$torch.int16"
 handlers:
 - _target_: CheckpointLoader
