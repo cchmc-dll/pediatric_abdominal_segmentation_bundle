@@ -124,6 +124,17 @@ postprocessing:
   - _target_: Activationsd
     keys: pred
     softmax: true
+  - _target_: Invertd
+    keys: 
+    - pred
+    - "@image_key"
+    transform: "@preprocessing"
+    orig_keys: image
+    meta_key_postfix: meta_dict
+    nearest_interp: 
+    - false
+    - false
+    to_tensor: true
   - _target_: AsDiscreted
     keys: pred
     argmax: true
@@ -136,17 +147,6 @@ postprocessing:
     namekey: image
     output_dir: "@output_dir"
     output_postfix: 'volumes'
-  - _target_: Invertd
-    keys: 
-    - pred
-    - "@image_key"
-    transform: "@preprocessing"
-    orig_keys: image
-    meta_key_postfix: meta_dict
-    nearest_interp: 
-    - true
-    - false
-    to_tensor: true
   - _target_: scripts.post_transforms.LabelToContourd
     keys: pred
   - _target_: scripts.post_transforms.OverlayImageLabeld
@@ -157,6 +157,14 @@ postprocessing:
     keys: overlay
     output_ext: '.dcm'
     output_dir: "@output_dir"
+    separate_folder: false
+    #squeeze_end_dims: false
+    output_dtype: "$torch.int16"
+  - _target_: SaveImaged
+    keys: pred
+    output_ext: '.nii.gz'
+    output_dir: "@output_dir"
+    meta_keys: pred_meta_dict
     separate_folder: false
     #squeeze_end_dims: false
     output_dtype: "$torch.int16"

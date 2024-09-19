@@ -10,7 +10,7 @@ from monai.data import MetaTensor
 import os
 import json
 
-# Calculate segmentatin volumes in ml
+# Calculate segmentation volumes in ml
 class CalculateVolumeFromMaskd(MapTransform):
     """
     Dictionary-based transform to calculate the volume of predicted organ masks.
@@ -108,7 +108,7 @@ class LabelToContourd(MapTransform):
                     contour_image[thick_edges > 0] = label
 
             # Convert the contour image back to a MetaTensor with the original metadata
-            contour_image_meta = MetaTensor(contour_image, meta=label_image.meta, affine=label_image.affine)
+            contour_image_meta = MetaTensor(contour_image, meta=label_image.meta)#, affine=label_image.affine)
             
             # Store the contour MetaTensor in the output dictionary
             d[key] = contour_image_meta
