@@ -155,7 +155,7 @@ postprocessing:
     separate_folder: false
     #squeeze_end_dims: false
     output_dtype: "$torch.int16"
-  - _target_: scripts.post_transforms.LabelToContourd
+  - _target_: scripts.post_transforms.LabelToContourd  # comment out for masks
     keys: pred
   - _target_: scripts.post_transforms.OverlayImageLabeld
     image_key: "@image_key"
