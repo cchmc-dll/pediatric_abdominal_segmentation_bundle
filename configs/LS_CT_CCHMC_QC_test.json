@@ -1,0 +1,232 @@
+{
+  "validation": [
+    {
+      "image": "../test_data/nifti/exam_3_CT_101.nii.gz",
+      "label": "../test_data/nifti/exam_3_CT_101.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_9_CT_107.nii.gz",
+      "label": "../test_data/nifti/exam_9_CT_107.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_10_CT_108.nii.gz",
+      "label": "../test_data/nifti/exam_10_CT_108.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_11_CT_109.nii.gz",
+      "label": "../test_data/nifti/exam_11_CT_109.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_20_CT_117.nii.gz",
+      "label": "../test_data/nifti/exam_20_CT_117.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_29_CT_125.nii.gz",
+      "label": "../test_data/nifti/exam_29_CT_125.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_51_CT_146.nii.gz",
+      "label": "../test_data/nifti/exam_51_CT_146.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_58_CT_152.nii.gz",
+      "label": "../test_data/nifti/exam_58_CT_152.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_63_CT_157.nii.gz",
+      "label": "../test_data/nifti/exam_63_CT_157.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_66_CT_16.nii.gz",
+      "label": "../test_data/nifti/exam_66_CT_16.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_67_CT_160.nii.gz",
+      "label": "../test_data/nifti/exam_67_CT_160.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_69_CT_162.nii.gz",
+      "label": "../test_data/nifti/exam_69_CT_162.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_73_CT_168.nii.gz",
+      "label": "../test_data/nifti/exam_73_CT_168.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_74_CT_169.nii.gz",
+      "label": "../test_data/nifti/exam_74_CT_169.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_77_CT_172.nii.gz",
+      "label": "../test_data/nifti/exam_77_CT_172.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_81_CT_177.nii.gz",
+      "label": "../test_data/nifti/exam_81_CT_177.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_82_CT_179.nii.gz",
+      "label": "../test_data/nifti/exam_82_CT_179.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_89_CT_186.nii.gz",
+      "label": "../test_data/nifti/exam_89_CT_186.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_91_CT_188.nii.gz",
+      "label": "../test_data/nifti/exam_91_CT_188.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_94_CT_190.nii.gz",
+      "label": "../test_data/nifti/exam_94_CT_190.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_109_CT_209.nii.gz",
+      "label": "../test_data/nifti/exam_109_CT_209.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_118_CT_219.nii.gz",
+      "label": "../test_data/nifti/exam_118_CT_219.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_124_CT_226.nii.gz",
+      "label": "../test_data/nifti/exam_124_CT_226.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_130_CT_233.nii.gz",
+      "label": "../test_data/nifti/exam_130_CT_233.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_134_CT_237.nii.gz",
+      "label": "../test_data/nifti/exam_134_CT_237.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_135_CT_238.nii.gz",
+      "label": "../test_data/nifti/exam_135_CT_238.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_145_CT_28.nii.gz",
+      "label": "../test_data/nifti/exam_145_CT_28.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_147_CT_3.nii.gz",
+      "label": "../test_data/nifti/exam_147_CT_3.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_152_CT_34.nii.gz",
+      "label": "../test_data/nifti/exam_152_CT_34.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_155_CT_38.nii.gz",
+      "label": "../test_data/nifti/exam_155_CT_38.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_157_CT_4.nii.gz",
+      "label": "../test_data/nifti/exam_157_CT_4.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_168_CT_50.nii.gz",
+      "label": "../test_data/nifti/exam_168_CT_50.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_169_CT_51.nii.gz",
+      "label": "../test_data/nifti/exam_169_CT_51.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_183_CT_64.nii.gz",
+      "label": "../test_data/nifti/exam_183_CT_64.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_195_CT_75.nii.gz",
+      "label": "../test_data/nifti/exam_195_CT_75.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_200_CT_8.nii.gz",
+      "label": "../test_data/nifti/exam_200_CT_8.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_202_CT_81.nii.gz",
+      "label": "../test_data/nifti/exam_202_CT_81.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_223_CT_163.nii.gz",
+      "label": "../test_data/nifti/exam_223_CT_163.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_232_CT_205.nii.gz",
+      "label": "../test_data/nifti/exam_232_CT_205.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_238_CT_222.nii.gz",
+      "label": "../test_data/nifti/exam_238_CT_222.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_243_CT_245.nii.gz",
+      "label": "../test_data/nifti/exam_243_CT_245.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_244_CT_246.nii.gz",
+      "label": "../test_data/nifti/exam_244_CT_246.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_247_CT_249.nii.gz",
+      "label": "../test_data/nifti/exam_247_CT_249.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_255_CT_256.nii.gz",
+      "label": "../test_data/nifti/exam_255_CT_256.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_260_CT_261.nii.gz",
+      "label": "../test_data/nifti/exam_260_CT_261.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_269_CT_270.nii.gz",
+      "label": "../test_data/nifti/exam_269_CT_270.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_284_CT_285.nii.gz",
+      "label": "../test_data/nifti/exam_284_CT_285.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_285_CT_286.nii.gz",
+      "label": "../test_data/nifti/exam_285_CT_286.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_287_CT_288.nii.gz",
+      "label": "../test_data/nifti/exam_287_CT_288.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_292_CT_294.nii.gz",
+      "label": "../test_data/nifti/exam_292_CT_294.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_303_CT_305.nii.gz",
+      "label": "../test_data/nifti/exam_303_CT_305.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_311_CT_313.nii.gz",
+      "label": "../test_data/nifti/exam_311_CT_313.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_314_CT_316.nii.gz",
+      "label": "../test_data/nifti/exam_314_CT_316.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_321_CT_323.nii.gz",
+      "label": "../test_data/nifti/exam_321_CT_323.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_325_CT_327.nii.gz",
+      "label": "../test_data/nifti/exam_325_CT_327.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_328_CT_334.nii.gz",
+      "label": "../test_data/nifti/exam_328_CT_334.nii.gz"
+    },
+    {
+      "image": "../test_data/nifti/exam_330_CT_336.nii.gz",
+      "label": "../test_data/nifti/exam_330_CT_336.nii.gz"
+    }
+  ]
+}

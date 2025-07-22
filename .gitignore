@@ -2,3 +2,5 @@
 eval/*
 !eval/.gitkeep
 cache/*
+*.dcm
+*.nii.gz

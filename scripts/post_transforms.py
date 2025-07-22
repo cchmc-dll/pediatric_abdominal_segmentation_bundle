@@ -226,6 +226,15 @@ class OverlayImageLabeld(MapTransform):
         image = d[self.image_key]  # Expecting shape (1, H, W, D)
         label = d[self.label_key]  # Expecting shape (1, H, W, D)
 
+        # # uncomment when running pipeline with mask (non-contour) outputs, i.e. LabelToContourd transform absent
+        # if image.device.type == "cuda":
+        #     image = image.cpu()
+        #     d[self.image_key] = image
+        # if label.device.type == "cuda":
+        #     label = label.cpu()
+        #     d[self.label_key] = label
+        # # -----------------------
+
         # Ensure that the input has the correct dimensions
         assert image.shape[0] == 1 and label.shape[0] == 1, "Image and label must have a channel dimension of 1."
         assert image.shape == label.shape, f"Image and label must have the same shape: {image.shape} vs {label.shape}"
