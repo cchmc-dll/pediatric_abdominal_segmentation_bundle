@@ -142,6 +142,8 @@ train:
     - "@image_key"
     - "@label_key"
     source_key: "@image_key"
+    # default from monai>=1.2.0,<=1.5.0
+    allow_smaller: true
     mode:
     - "minimum"
     - "minimum"
