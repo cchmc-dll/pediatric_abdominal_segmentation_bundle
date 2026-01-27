@@ -13,7 +13,7 @@ output_channels: 4
 bundle_root: "."
 output_dir: "$@bundle_root + '/eval/dynunet_FT/contour'"
 dataset_dir: "/processed/Public/CT_TotalSegmentator/TS_split/test/" 
-data_list_file_path: "$@bundle_root + '/configs/TS_test.json'"
+data_list_file_path: "$@bundle_root + '/configs/LS_CT_CCHMC_QC_test.json'"
 datalist: "$monai.data.load_decathlon_datalist(@data_list_file_path, data_list_key='validation')"
 device: "$torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')"
 spatial_size: 
